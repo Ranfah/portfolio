@@ -1,3 +1,8 @@
+:root{
+    --firts-color:#050505;
+    --second-color:#fff;
+    --three-color:#0303e0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +10,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #050505;
-    color: #fff;
+    background-color: var(--firts-color);
+    color: var(--second-color);
 }
 #header{
     width: 100%;
@@ -20,10 +25,10 @@ body{
 }
 h1 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--second-color);
 }
 h1 a span{
-    color: #0303e0;
+    color: var(--three-color);
 }
 nav{
     display: flex;
@@ -44,7 +49,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color:var(--second-color);
     font-size: 18px;
     position: relative;
 }
@@ -52,7 +57,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #0303e0;
+    background: var(--three-color);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,5 +75,5 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .text_header h1 span{
-    color: #0303e0;
+    color: var(--three-color);
 }
