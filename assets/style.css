@@ -2,6 +2,8 @@
     --firts-color:#050505;
     --second-color:#fff;
     --three-color:#0303e0;
+    --four-color:#2a2a92;
+    --five-color:#4e4e4e8f;
 }
 *{
     margin: 0;
@@ -17,8 +19,9 @@ body{
     width: 100%;
     height: 100vh;
 }
-.logo_title{
-    margin: 10px 40px;
+.logo_title a{
+    font-size: 50px;
+    font-weight: 600;
 }
 .container{
     padding: 10px 10%;
@@ -80,30 +83,104 @@ nav ul li a:hover::after{
 /* --------------- about------------------------ */
 #about{
     width: 100%;
-    height: 100vh;
+}
+.row{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .col_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    padding: 20px 20px;
+    flex-basis: 35%;
 }
 .col_1 img{
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 .col_2{
-    width: 60%;
-    padding: 20px 20px;
+    flex-basis: 60%;
 }
-.title_skills{
+.sub_title{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.tab-title{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0px;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--three-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 0;
+}
+.tab-contents ul li span{
+    color:var(--four-color);
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.tab-active{
+    display: block;
+}
+/* ----------------services------------------- */
+#services{
+    padding: 30px 0;
+}
+.liste_service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.liste_service div{
+    background: var(--five-color);
+    padding: 30px 20px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+}
+.liste_service div h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.liste_service div p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.liste_service div a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--second-color);
+    display: inline-block;
+}
+.liste_service div:hover{
+    background: var(--three-color);
+    transform: translateY(-10px);
+}
+/* -------------------portfolio------------------- */
+#portfolio{
+    margin: 30px 0;
 }

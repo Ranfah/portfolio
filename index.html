@@ -27,18 +27,76 @@
         </div>
     </div>
     <div id="about">
-        <div class="col_1">
-            <img src="images/image.jpeg" alt="">
-        </div>
-        <div class="col_2">
-            <h1>About Me</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis commodi nisi ipsam assumenda voluptatibus voluptas obcaecati necessitatibus quidem in reiciendis, sit possimus sed beatae nam quae quos velit! Nemo, at?</p>
-            <div class="title_skills">
-                <p class="skills">Skills</p>
-                <p class="experiences">Experiences</p>
-                <p class="etudes">Etudes</p>
+        <div class="container">
+            <div class="row">
+                <div class="col_1">
+                    <img src="images/image.jpeg" alt="">
+                </div>
+                <div class="col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis commodi nisi ipsam assumenda voluptatibus voluptas obcaecati necessitatibus quidem in reiciendis, sit possimus sed beatae nam quae quos velit! Nemo, at?</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links"onclick="opentab('etudes')">Etudes</p>
+                    </div>
+                    <div class="tab-contents tab-active" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Creation web application</li>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>IT</span><br>Fixe an bug Hardware and SoftWare</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Web Developer</span><br>Creation application to redacte file PDF</li>
+                            <li><span>Web Developer</span><br>Creation an Desktop application</li>
+                            <li><span>IT</span><br>Fixe an bug Hardware and SoftWare</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="etudes">
+                        <ul>
+                            <li><span>Master</span><br>Ingeneer (IS-INFO Ampasamadinika)</li>
+                            <li><span>Licence</span><br>ISIME Behoririka</li>
+                            <li><span>BACC</span><br>Lycée Fanomezantsoa</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My services</h1>
+            <div class="liste_service">
+                <div>
+                    <h2>Web Designer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur iusto incidunt autem officiis esse error eaque quaerat cum ipsa natus assumenda animi obcaecati quasi perspiciatis a, nam neque.</p>
+                    <a href="#">Voir plus</a>
+                </div>
+                <div>
+                    <h2>Web Designer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur iusto incidunt autem officiis esse error eaque quaerat cum ipsa natus assumenda animi obcaecati quasi perspiciatis a, nam neque.</p>
+                    <a href="#">Voir plus</a>
+                </div>
+                <div>
+                    <h2>Web Designer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur iusto incidunt autem officiis esse error eaque quaerat cum ipsa natus assumenda animi obcaecati quasi perspiciatis a, nam neque.</p>
+                    <a href="#">Voir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">Portfolio</h1>
+            <div class="list-work">
+                <div class="work"></div>
+                <div class="work"></div>
+                <div class="work"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts.js"></script>
 </body>
 </html>
