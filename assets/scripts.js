@@ -20,3 +20,44 @@
  function closemenu(){
     sidemenu.style.right="-100px"
  }
+
+ let toggleSwitch = document.querySelector("input");
+
+toggleSwitch.addEventListener("change", (e) => {
+  let body = document.querySelector("body");
+  let links_as = document.querySelectorAll('a')
+  let p_colors = document.querySelectorAll('p')
+  let h1_colors = document.querySelectorAll('h1')
+  let spans = document.querySelectorAll('span')
+  let li_colors = document.querySelectorAll('li')
+
+  if (e.target.checked) {
+    body.style.backgroundColor = "#f0f0f0";
+    for(links_a of links_as){
+        links_a.style.color="#000"
+    }
+    for(p_color of p_colors){
+        p_color.style.color="#000"
+    }
+    for(h1_color of h1_colors){
+        h1_color.style.color="#000"
+    }
+    for(li_color of li_colors){
+        li_color.style.color="#000"
+    }
+  } else {
+    body.style.backgroundColor = "#050505";
+    for(links_a of links_as){
+        links_a.style.color="#fff"
+    }
+    for(p_color of p_colors){
+        p_color.style.color="#fff"
+    }
+    for(h1_color of h1_colors){
+        h1_color.style.color="#fff"
+    }
+    for(li_color of li_colors){
+        li_color.style.color="#fff"
+    }
+  }
+});
