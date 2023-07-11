@@ -1,6 +1,8 @@
  let tablinks = document.getElementsByClassName("tab-links")
  let tabcontents = document.getElementsByClassName("tab-contents")
 
+ let sidemenu = document.getElementById('sidemenu')
+
  function opentab(tabname){
     for(tablink of tablinks){
         tablink.classList.remove("active-link")
@@ -10,4 +12,11 @@
     }
     event.currentTarget.classList.add("active-link")
     document.getElementById(tabname).classList.add("tab-active")
+ }
+
+ function openmenu(){
+    sidemenu.style.right="0"
+ }
+ function closemenu(){
+    sidemenu.style.right="-100px"
  }
