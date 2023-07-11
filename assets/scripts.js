@@ -30,6 +30,8 @@ toggleSwitch.addEventListener("change", (e) => {
   let h1_colors = document.querySelectorAll('h1')
   let spans = document.querySelectorAll('span')
   let li_colors = document.querySelectorAll('li')
+  let boutons = document.querySelectorAll('button')
+  let i_colors = document.querySelectorAll('i')
 
   if (e.target.checked) {
     body.style.backgroundColor = "#f0f0f0";
@@ -45,6 +47,11 @@ toggleSwitch.addEventListener("change", (e) => {
     for(li_color of li_colors){
         li_color.style.color="#000"
     }
+    for(bouton of boutons){
+        bouton.style.color="#000"
+    }
+    i_colors[0].style.color="#000"
+    i_colors[1].style.color="#000"
   } else {
     body.style.backgroundColor = "#050505";
     for(links_a of links_as){
@@ -59,5 +66,10 @@ toggleSwitch.addEventListener("change", (e) => {
     for(li_color of li_colors){
         li_color.style.color="#fff"
     }
+    for(bouton of boutons){
+        bouton.style.color="#fff"
+    }
+    i_colors[0].style.color="#fff"
+    i_colors[1].style.color="#fff"
   }
 });
