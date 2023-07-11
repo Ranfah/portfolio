@@ -108,6 +108,10 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: var(--second-color);
 }
+.col_2 p{
+    margin-top: 30px;
+    text-align: justify;
+}
 .tab-title{
     display: flex;
     margin: 20px 0 40px;
