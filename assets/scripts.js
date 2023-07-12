@@ -32,9 +32,13 @@ toggleSwitch.addEventListener("change", (e) => {
   let li_colors = document.querySelectorAll('li')
   let boutons = document.querySelectorAll('button')
   let i_colors = document.querySelectorAll('i')
-
+  let dark_display = document.getElementsByClassName('D')
+  let list_display = document.getElementsByClassName('L')
+  let background_label= document.getElementById("label_id")
+  let img_cage = document.querySelectorAll('img')
   if (e.target.checked) {
     body.style.backgroundColor = "#f0f0f0";
+    background_label.style.backgroundColor ="#f0f0f0"
     for(links_a of links_as){
         links_a.style.color="#000"
     }
@@ -52,8 +56,16 @@ toggleSwitch.addEventListener("change", (e) => {
     }
     i_colors[0].style.color="#000"
     i_colors[1].style.color="#000"
+    dark_display[0].style.display="block"
+    list_display[0].style.display="none"
+    img_cage[1].src="./images/1_d.png"
+    img_cage[2].src="./images/2_d.png"
+    img_cage[3].src="./images/3_d.png"
+    spans[3].style.display="block"
+    spans[4].style.display="none"
   } else {
     body.style.backgroundColor = "#050505";
+    background_label.style.backgroundColor ="#050505"
     for(links_a of links_as){
         links_a.style.color="#fff"
     }
@@ -71,5 +83,12 @@ toggleSwitch.addEventListener("change", (e) => {
     }
     i_colors[0].style.color="#fff"
     i_colors[1].style.color="#fff"
+    list_display[0].style.display="block"
+    dark_display[0].style.display="none"
+    img_cage[1].src="./images/1.png"
+    img_cage[2].src="./images/2.png"
+    img_cage[3].src="./images/3.png"
+    spans[3].style.display="none"
+    spans[4].style.display="block"
   }
 });
